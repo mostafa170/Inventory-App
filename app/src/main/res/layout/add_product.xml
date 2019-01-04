@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Add_Product">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="product name : "
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="price : "
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="quantity"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/productQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:text="Product Image"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/uploadImageButtonAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnImageOnClick"
+            android:text="upload" />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageSelected"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/submitButtonAddProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="onClickSubmit"
+            android:text="save" />
+    </LinearLayout>
+
+</ScrollView>
